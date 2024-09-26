@@ -1,5 +1,6 @@
 /* test */
 #include <stdio.h>
+#include <memory.h>
 
 typedef struct {
 	int x;
@@ -9,8 +10,7 @@ typedef struct {
 int main(int argc,char *argv[])
 {
 	POS	p;
-	p.x = 0;
-	p.y = 0;
+	memset(&p,0,sizeof(POS));
 
 	printf("Hello World!!\n");
 
